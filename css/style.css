@@ -98,12 +98,16 @@ FOOTER
 
 footer{
     background-color: #1A1A1A;
+    padding-top: 30px;
 }
 
 .footer-row{
     justify-content: space-between;
 }
 
+footer .footer-row .footer-info *{
+    color: white;
+}
 
 
 
@@ -141,11 +145,5 @@ DEBUG
 .debug .footer-row *{
     background-color: aqua;
     border: 1px dashed black;
-    height: 80px;
-    width: 200px;
-}
-
-.debug .footer-row span{
-    height: 80px;
-    width: 200px;
+    width: 500px;
 }
