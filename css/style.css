@@ -7,9 +7,15 @@ RESET
     box-sizing: border-box;
 }
 
+
 /* 
 GENERAL
 */
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -53,25 +59,32 @@ header .header-row > *{
     width: 120px;
 }
 
+.header-logo img{
+    height: 90%;
+    padding-top: 2px;
+
+}
+
 header .header-row .header-symbols *{
     padding: 5px 5px;
 }
+
 header .header-row .header-categories *{
     padding: 5px 0px;
 }
+
 
 /* 
 MAIN
 */
 
 main{
-    margin-bottom: 150px;
-    margin-top: 80px;
+    margin-bottom: 50px;
+    margin-top: 60px;
 }
 
 main .main-row .single-product{
     width: calc((100% / 3) - 10px);
-    /* height: 500px; */
 }
 
 main .main-row{
@@ -79,13 +92,29 @@ main .main-row{
 }
 
 main .main-row .single-product{
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 main .main-row .single-product .image-content{
     width: 100%;
     height: 90%;
     position: relative;
+}
+
+main .main-row .single-product .image-caption{
+    padding-top: 5px;
+}
+
+main .main-row .single-product .image-content:hover .main-image{
+    display: none;
+}
+
+main .main-row .single-product .image-content:hover .secondary-image{
+    display: block;
+}
+
+main .main-row .single-product .image-content .secondary-image{
+    display: none;
 }
 
 .discounted-price{
@@ -100,18 +129,18 @@ main .main-row .single-product .image-content{
 .red-image-tag{
     color: white;
     background-color: red;
+    padding: 5px 10px;
+}
+
+.tags{
     position: absolute;
     left: 0;
     bottom: 40px;
-    padding: 5px 10px;
 }
 
 .green-image-tag{
     color: white;
     background-color: green;
-    position: absolute;
-    left: 60px;
-    bottom: 40px;
     padding: 5px 10px;
 }
 
@@ -123,10 +152,14 @@ main .main-row .single-product .image-content{
     position: absolute;
     right: 0;
     top: 10px;
-    padding: 5px 14px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
     font-size: 34px;
     background-color: white;
 }
+
 
 /* 
 FOOTER
@@ -136,11 +169,6 @@ footer{
     background-color: #1A1A1A;
     padding-top: 30px;
     padding-bottom: 30px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 1;
 }
 
 .footer-row{
@@ -207,5 +235,5 @@ DEBUG
 .debug .footer-row *{
     background-color: aqua;
     border: 1px dashed black;
-    /* width: 500px; */
-} */
+    width: 500px;
+}*/
